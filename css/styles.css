@@ -1128,6 +1128,40 @@ ul {
   opacity: 0.7;
 }
 
+/* Date fuera del .timeline__meta (roles sin badge) */
+.timeline__card-top > .timeline__date {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* ── Chips de responsabilidades ── */
+.tl-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.tl-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 13px;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  line-height: 1.4;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.tl-chip:hover {
+  background: var(--gradient-soft);
+  border-color: rgba(46,56,245,0.16);
+  color: var(--primary);
+}
+
 /* ============================================================
    TOOLS
    ============================================================ */
@@ -1354,6 +1388,38 @@ a.contact__item:hover .contact__item-arrow {
 }
 
 /* ============================================================
+   HERO — MÉTRICAS MÓVILES
+   Ocultas en desktop; visibles solo en móvil (<768px)
+   ============================================================ */
+.hero__mobile-stats {
+  display: none;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.hero__mobile-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px 22px;
+  background: var(--bg-light);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  min-width: 110px;
+}
+
+.hero__mobile-stat .hero__stat-value {
+  font-size: 1.375rem;
+}
+
+.hero__mobile-stat .hero__stat-label {
+  font-size: 0.6875rem;
+}
+
+/* ============================================================
    RESPONSIVE — 1024px
    ============================================================ */
 @media (max-width: 1100px) {
@@ -1484,11 +1550,27 @@ a.contact__item:hover .contact__item-arrow {
   .hero__container {
     min-height: auto;
     padding: 48px 24px 72px;
+    gap: 32px;
   }
 
   .hero__photo-wrapper {
-    width: 240px;
-    height: 300px;
+    width: 220px;
+    height: 270px;
+  }
+
+  /* Ocultar tarjetas flotantes en móvil */
+  .hero__stat-card {
+    display: none;
+  }
+
+  /* Ocultar decoraciones en móvil */
+  .hero__photo-deco {
+    display: none;
+  }
+
+  /* Mostrar métricas compactas debajo de la foto */
+  .hero__mobile-stats {
+    display: flex;
   }
 
   .hero__name {
@@ -1528,16 +1610,17 @@ a.contact__item:hover .contact__item-arrow {
   }
 
   .hero__photo-wrapper {
-    width: 200px;
-    height: 250px;
+    width: 190px;
+    height: 240px;
   }
 
-  .hero__stat-card--top {
-    right: 0;
+  .hero__mobile-stats {
+    gap: 10px;
   }
 
-  .hero__stat-card--bottom {
-    left: 0;
+  .hero__mobile-stat {
+    min-width: 90px;
+    padding: 10px 14px;
   }
 
   .hero__actions {
