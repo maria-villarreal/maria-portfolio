@@ -1399,6 +1399,13 @@ a.contact__item:hover .contact__item-arrow {
   width: 100%;
 }
 
+/* Garantía explícita: nunca visibles en desktop ni tablet */
+@media (min-width: 769px) {
+  .hero__mobile-stats {
+    display: none !important;
+  }
+}
+
 .hero__mobile-stat {
   display: flex;
   flex-direction: column;
@@ -1558,9 +1565,18 @@ a.contact__item:hover .contact__item-arrow {
     height: 270px;
   }
 
-  /* Ocultar tarjetas flotantes en móvil */
-  .hero__stat-card {
-    display: none;
+  /* Apilar visual en columna: foto arriba, métricas abajo */
+  .hero__visual {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Ocultar tarjetas flotantes en móvil (todas las variantes) */
+  .hero__stat-card,
+  .hero__stat-card--top,
+  .hero__stat-card--bottom {
+    display: none !important;
   }
 
   /* Ocultar decoraciones en móvil */
@@ -1571,6 +1587,8 @@ a.contact__item:hover .contact__item-arrow {
   /* Mostrar métricas compactas debajo de la foto */
   .hero__mobile-stats {
     display: flex;
+    margin-top: 0;
+    width: auto;
   }
 
   .hero__name {
