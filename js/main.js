@@ -152,4 +152,54 @@
     });
   });
 
+  /* =============================================
+     LIGHTBOX — imágenes de proyectos
+  ============================================= */
+  var lightbox    = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+  var lightboxClose = document.getElementById('lightboxClose');
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    setTimeout(function () { lightboxImg.src = ''; }, 350);
+  }
+
+  // Attach click to cover images (single)
+  document.querySelectorAll('.cs-cover-img').forEach(function (img) {
+    img.addEventListener('click', function () {
+      if (this.naturalWidth > 0) openLightbox(this.src, this.alt);
+    });
+  });
+
+  // Attach click to gallery images
+  document.querySelectorAll('.cs-gal-img').forEach(function (img) {
+    img.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (this.naturalWidth > 0) openLightbox(this.src, this.alt);
+    });
+  });
+
+  // Close on backdrop click
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Close button
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+  // Close on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+  });
+
 })();

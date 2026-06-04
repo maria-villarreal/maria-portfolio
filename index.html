@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
 
@@ -152,293 +153,250 @@
         <h2 class="section__title">Casos de éxito que<br><span class="gradient-text">generan impacto.</span></h2>
       </div>
 
-      <div class="projects__grid">
+      <div class="cs-grid">
 
-        <!-- PROYECTO 1: Feria de empleo -->
-        <article class="project-card project-card--featured fade-in">
-          <div class="project-card__visual">
-            <div class="project-card__badge">Puerto Rico · Sep 2025</div>
-            <div class="project-card__img project-card__img--1">
-              <div class="project-visual__metrics">
-                <div class="pv-metric">
-                  <span class="pv-metric__value">1.5M</span>
-                  <span class="pv-metric__label">Impresiones</span>
-                </div>
-                <div class="pv-metric__divider"></div>
-                <div class="pv-metric">
-                  <span class="pv-metric__value">448K</span>
-                  <span class="pv-metric__label">Alcance</span>
-                </div>
-                <div class="pv-metric__divider"></div>
-                <div class="pv-metric">
-                  <span class="pv-metric__value">19.6%</span>
-                  <span class="pv-metric__label">Conversión</span>
-                </div>
-              </div>
-            </div>
+        <!-- ─── P1: Feria de empleo (HERO — ancho completo) ─── -->
+        <article class="cs-card cs-card--hero fade-in">
+          <div class="cs-visual cs-visual--hero cs-grad--1">
+            <img src="assetsprojects/feria-empleo-1.jpg.jpg"
+                 class="cs-cover-img"
+                 alt="Feria de empleo Construye tu Futuro"
+                 loading="lazy"
+                 onerror="this.style.display='none'">
+            <div class="cs-badge">Puerto Rico · Sep 2025</div>
           </div>
-          <div class="project-card__body">
-            <span class="project-card__category">Campaña digital de reclutamiento</span>
-            <h3 class="project-card__title">Feria de empleo<br>"Construye tu Futuro"</h3>
-            <div class="project-card__meta">
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Objetivo</span>
+          <div class="cs-body">
+            <div>
+              <span class="cs-cat">Campaña digital de reclutamiento</span>
+              <h3 class="cs-title cs-title--lg">Feria de empleo<br>"Construye tu Futuro"</h3>
+            </div>
+            <div class="cs-meta">
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Objetivo</span>
                 <p>Impulsar la asistencia a una feria de reclutamiento mediante campañas digitales de alto impacto.</p>
               </div>
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Mi rol</span>
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Mi rol</span>
                 <p>Planificación estratégica, coordinación y seguimiento de campaña.</p>
               </div>
             </div>
-            <div class="project-card__metrics">
-              <div class="project-metric">
-                <span class="project-metric__value">$2,000</span>
-                <span class="project-metric__label">Inversión</span>
-              </div>
-              <div class="project-metric">
-                <span class="project-metric__value">1.5M</span>
-                <span class="project-metric__label">Impresiones</span>
-              </div>
-              <div class="project-metric">
-                <span class="project-metric__value">448K</span>
-                <span class="project-metric__label">Alcance</span>
-              </div>
-              <div class="project-metric">
-                <span class="project-metric__value">14K</span>
-                <span class="project-metric__label">Clics</span>
-              </div>
-              <div class="project-metric">
-                <span class="project-metric__value">46</span>
-                <span class="project-metric__label">Leads</span>
-              </div>
-              <div class="project-metric">
-                <span class="project-metric__value">19.6%</span>
-                <span class="project-metric__label">Conversión Lead→Asistente</span>
-              </div>
+            <div class="cs-metrics cs-metrics--6">
+              <div class="cs-m"><span class="cs-m__v">$2,000</span><span class="cs-m__l">Inversión</span></div>
+              <div class="cs-m"><span class="cs-m__v">1.5M</span><span class="cs-m__l">Impresiones</span></div>
+              <div class="cs-m"><span class="cs-m__v">448K</span><span class="cs-m__l">Alcance</span></div>
+              <div class="cs-m"><span class="cs-m__v">14K</span><span class="cs-m__l">Clics</span></div>
+              <div class="cs-m"><span class="cs-m__v">46</span><span class="cs-m__l">Leads</span></div>
+              <div class="cs-m"><span class="cs-m__v">19.6%</span><span class="cs-m__l">Conversión lead→asistente</span></div>
             </div>
           </div>
         </article>
 
-        <!-- PROYECTO 2: Marcas personales -->
-        <article class="project-card fade-in fade-in--d1">
-          <div class="project-card__visual">
-            <div class="project-card__img project-card__img--2">
-              <!--
-                Agrega aquí las imágenes de las marcas personales:
-                <img src="img/marcas-personales.jpg" alt="Marcas personales Windmar" class="project-card__img-real">
-              -->
-              <div class="project-visual__brands">
-                <div class="pv-brand pv-brand--1">G</div>
-                <div class="pv-brand pv-brand--2">R</div>
-                <div class="pv-brand pv-brand--3">M</div>
+        <!-- ─── P2: Marcas personales (galería de 3 imágenes) ─── -->
+        <article class="cs-card fade-in fade-in--d1">
+          <div class="cs-visual cs-visual--gallery">
+            <div class="cs-gallery cs-gallery--3">
+              <div class="cs-gal-item">
+                <div class="cs-gal-placeholder">B</div>
+                <img src="assetsprojects/marca-brayan.jpg.jpg"
+                     class="cs-gal-img"
+                     alt="Marca personal – Brayan"
+                     loading="lazy"
+                     onerror="this.style.display='none'">
               </div>
-              <span class="pv-brands__label">3 marcas personales</span>
+              <div class="cs-gal-item">
+                <div class="cs-gal-placeholder">M</div>
+                <img src="assetsprojects/marca-marie.jpg.jpg"
+                     class="cs-gal-img"
+                     alt="Marca personal – Marie"
+                     loading="lazy"
+                     onerror="this.style.display='none'">
+              </div>
+              <div class="cs-gal-item">
+                <div class="cs-gal-placeholder">K</div>
+                <img src="assetsprojects/marca-kenneth.jpg.png"
+                     class="cs-gal-img"
+                     alt="Marca personal – Kenneth"
+                     loading="lazy"
+                     onerror="this.style.display='none'">
+              </div>
             </div>
+            <span class="cs-gallery-label">3 identidades de marca desarrolladas</span>
           </div>
-          <div class="project-card__body">
-            <span class="project-card__category">Branding estratégico</span>
-            <h3 class="project-card__title">Marcas personales para líderes comerciales</h3>
-            <div class="project-card__meta">
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Objetivo</span>
+          <div class="cs-body">
+            <div>
+              <span class="cs-cat">Branding estratégico</span>
+              <h3 class="cs-title">Marcas personales para líderes comerciales</h3>
+            </div>
+            <div class="cs-meta">
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Objetivo</span>
                 <p>Crear identidades visuales para gerentes de ventas alineadas con la identidad corporativa de Windmar Home.</p>
               </div>
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Mi rol</span>
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Mi rol</span>
                 <p>Conceptualización estratégica, desarrollo de marca y supervisión de contenido.</p>
               </div>
             </div>
-            <ul class="project-card__results">
-              <li>
-                <span class="project-result__check">✓</span>
-                3 marcas personales desarrolladas
-              </li>
-              <li>
-                <span class="project-result__check">✓</span>
-                Mayor diferenciación de líderes en la estrategia de comunicación comercial
-              </li>
+            <ul class="cs-results">
+              <li class="cs-result"><span class="cs-result__dot">✓</span>3 marcas personales desarrolladas</li>
+              <li class="cs-result"><span class="cs-result__dot">✓</span>Mayor diferenciación de líderes en la estrategia de comunicación comercial</li>
             </ul>
           </div>
         </article>
 
-        <!-- PROYECTO 3: Windmar en Acción -->
-        <article class="project-card fade-in fade-in--d2">
-          <div class="project-card__visual">
-            <div class="project-card__img project-card__img--3">
-              <div class="project-visual__stat-ring">
-                <div class="pv-ring">
-                  <span class="pv-ring__value">300+</span>
-                  <span class="pv-ring__label">Vendedores<br>impactados</span>
-                </div>
-              </div>
-            </div>
+        <!-- ─── P3: Windmar en Acción ─── -->
+        <article class="cs-card fade-in fade-in--d2">
+          <div class="cs-visual cs-visual--single cs-grad--3">
+            <img src="assetsprojects/windmar-accion-1.jpg.jpg"
+                 class="cs-cover-img"
+                 alt="Windmar en Acción"
+                 loading="lazy"
+                 onerror="this.style.display='none'">
           </div>
-          <div class="project-card__body">
-            <span class="project-card__category">Employer branding & cultura</span>
-            <h3 class="project-card__title">Windmar en Acción</h3>
-            <div class="project-card__meta">
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Objetivo</span>
+          <div class="cs-body">
+            <div>
+              <span class="cs-cat">Employer branding & cultura</span>
+              <h3 class="cs-title">Windmar en Acción</h3>
+            </div>
+            <div class="cs-meta">
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Objetivo</span>
                 <p>Fortalecer la cultura de la fuerza de ventas y convertir una iniciativa interna en una estrategia de employer branding.</p>
               </div>
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Mi rol</span>
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Mi rol</span>
                 <p>Diseño estratégico, gestión de contenido y desarrollo del proyecto.</p>
               </div>
             </div>
-            <ul class="project-card__results">
-              <li><span class="project-result__check">✓</span>+300 vendedores impactados</li>
-              <li><span class="project-result__check">✓</span>100% de cobertura interna en 3 meses</li>
-              <li><span class="project-result__check">✓</span>Canal de reclutamiento estratégico activo</li>
+            <ul class="cs-results">
+              <li class="cs-result"><span class="cs-result__dot">✓</span>+300 vendedores impactados</li>
+              <li class="cs-result"><span class="cs-result__dot">✓</span>100% de cobertura interna en 3 meses</li>
+              <li class="cs-result"><span class="cs-result__dot">✓</span>Canal de reclutamiento estratégico activo</li>
             </ul>
           </div>
         </article>
 
-        <!-- PROYECTO 4: Día de las Madres -->
-        <article class="project-card fade-in fade-in--d1">
-          <div class="project-card__visual">
-            <div class="project-card__img project-card__img--4">
-              <!--
-                Agrega aquí la imagen de resultados:
-                <img src="img/dia-madres.jpg" alt="Resultados campaña Día de las Madres" class="project-card__img-real">
-              -->
-              <div class="project-visual__metrics">
-                <div class="pv-metric">
-                  <span class="pv-metric__value">214</span>
-                  <span class="pv-metric__label">Ventas showroom</span>
-                </div>
-                <div class="pv-metric__divider"></div>
-                <div class="pv-metric">
-                  <span class="pv-metric__value">30</span>
-                  <span class="pv-metric__label">Leads</span>
-                </div>
+        <!-- ─── P4: Día de las Madres ─── -->
+        <article class="cs-card fade-in fade-in--d1">
+          <div class="cs-visual cs-visual--single cs-grad--4">
+            <div class="cs-cover-stats">
+              <div class="cs-cstat">
+                <span class="cs-cstat__val">214</span>
+                <span class="cs-cstat__lbl">Ventas showroom</span>
+              </div>
+              <div class="cs-cstat-divider"></div>
+              <div class="cs-cstat">
+                <span class="cs-cstat__val">30</span>
+                <span class="cs-cstat__lbl">Leads</span>
               </div>
             </div>
           </div>
-          <div class="project-card__body">
-            <span class="project-card__category">Campaña comercial</span>
-            <h3 class="project-card__title">Campaña<br>Día de las Madres</h3>
-            <div class="project-card__meta">
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Objetivo</span>
+          <div class="cs-body">
+            <div>
+              <span class="cs-cat">Campaña comercial</span>
+              <h3 class="cs-title">Campaña Día de las Madres</h3>
+            </div>
+            <div class="cs-meta">
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Objetivo</span>
                 <p>Incrementar tráfico y ventas en puntos físicos mediante campaña digital estratégica.</p>
               </div>
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Mi rol</span>
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Mi rol</span>
                 <p>Planificación y seguimiento de campaña.</p>
               </div>
             </div>
-            <div class="project-card__metrics project-card__metrics--sm">
-              <div class="project-metric">
-                <span class="project-metric__value">$1,000</span>
-                <span class="project-metric__label">Inversión</span>
-              </div>
-              <div class="project-metric">
-                <span class="project-metric__value">30</span>
-                <span class="project-metric__label">Leads</span>
-              </div>
-              <div class="project-metric">
-                <span class="project-metric__value">214</span>
-                <span class="project-metric__label">Ventas</span>
-              </div>
+            <div class="cs-metrics cs-metrics--3">
+              <div class="cs-m"><span class="cs-m__v">$1,000</span><span class="cs-m__l">Inversión</span></div>
+              <div class="cs-m"><span class="cs-m__v">30</span><span class="cs-m__l">Leads</span></div>
+              <div class="cs-m"><span class="cs-m__v">214</span><span class="cs-m__l">Ventas</span></div>
             </div>
           </div>
         </article>
 
-        <!-- PROYECTO 5: Dashboard -->
-        <article class="project-card fade-in fade-in--d2">
-          <div class="project-card__visual">
-            <div class="project-card__img project-card__img--5">
-              <div class="project-visual__dashboard">
-                <div class="pv-bar-row">
-                  <span class="pv-bar-row__label">Inversión</span>
-                  <div class="pv-bar"><div class="pv-bar__fill" style="width:82%"></div></div>
-                </div>
-                <div class="pv-bar-row">
-                  <span class="pv-bar-row__label">Leads</span>
-                  <div class="pv-bar"><div class="pv-bar__fill" style="width:65%"></div></div>
-                </div>
-                <div class="pv-bar-row">
-                  <span class="pv-bar-row__label">Conversiones</span>
-                  <div class="pv-bar"><div class="pv-bar__fill" style="width:48%"></div></div>
-                </div>
-                <div class="pv-bar-row">
-                  <span class="pv-bar-row__label">Alcance</span>
-                  <div class="pv-bar"><div class="pv-bar__fill" style="width:91%"></div></div>
-                </div>
-              </div>
-            </div>
+        <!-- ─── P5: Dashboard de reclutamiento ─── -->
+        <article class="cs-card fade-in fade-in--d2">
+          <div class="cs-visual cs-visual--single cs-grad--5">
+            <img src="assetsprojects/dashboard-reclutamiento.jpg.png"
+                 class="cs-cover-img"
+                 alt="Dashboard de seguimiento para campañas de reclutamiento"
+                 loading="lazy"
+                 onerror="this.style.display='none'">
           </div>
-          <div class="project-card__body">
-            <span class="project-card__category">Herramienta · Tecnología</span>
-            <h3 class="project-card__title">Dashboard de seguimiento para campañas de reclutamiento</h3>
-            <div class="project-card__meta">
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Objetivo</span>
+          <div class="cs-body">
+            <div>
+              <span class="cs-cat">Herramienta · Tecnología</span>
+              <h3 class="cs-title">Dashboard de seguimiento para campañas de reclutamiento</h3>
+            </div>
+            <div class="cs-meta">
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Objetivo</span>
                 <p>Centralizar el seguimiento de campañas digitales de reclutamiento en tiempo real.</p>
               </div>
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Mi rol</span>
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Mi rol</span>
                 <p>Diseño funcional, definición de métricas y coordinación de desarrollo.</p>
               </div>
             </div>
-            <div class="project-card__tools">
+            <div class="cs-tools">
               <span class="tool-tag">Claude</span>
               <span class="tool-tag">Claude Code</span>
               <span class="tool-tag">VS Code</span>
               <span class="tool-tag">GitHub</span>
             </div>
-            <ul class="project-card__results">
-              <li><span class="project-result__check">✓</span>Visualización de inversión en tiempo real</li>
-              <li><span class="project-result__check">✓</span>Control de conversiones y leads</li>
-              <li><span class="project-result__check">✓</span>Mayor velocidad para toma de decisiones</li>
+            <ul class="cs-results">
+              <li class="cs-result"><span class="cs-result__dot">✓</span>Visualización de inversión en tiempo real</li>
+              <li class="cs-result"><span class="cs-result__dot">✓</span>Control de conversiones y leads</li>
+              <li class="cs-result"><span class="cs-result__dot">✓</span>Mayor velocidad para toma de decisiones</li>
             </ul>
           </div>
         </article>
 
-        <!-- PROYECTO 6: Sistema de diseño -->
-        <article class="project-card fade-in fade-in--d3">
-          <div class="project-card__visual">
-            <div class="project-card__img project-card__img--6">
-              <div class="project-visual__design-system">
-                <div class="pv-ds-grid">
-                  <div class="pv-ds-block pv-ds-block--a"></div>
-                  <div class="pv-ds-block pv-ds-block--b"></div>
-                  <div class="pv-ds-block pv-ds-block--c"></div>
-                  <div class="pv-ds-block pv-ds-block--d"></div>
-                  <div class="pv-ds-block pv-ds-block--e"></div>
-                  <div class="pv-ds-block pv-ds-block--f"></div>
-                </div>
-              </div>
-            </div>
+        <!-- ─── P6: Sistema de diseño ─── -->
+        <article class="cs-card fade-in fade-in--d3">
+          <div class="cs-visual cs-visual--single cs-grad--6">
+            <img src="assetsprojects/system-design-windmar.jpg.png"
+                 class="cs-cover-img"
+                 alt="Sistema de diseño Windmar en Acción"
+                 loading="lazy"
+                 onerror="this.style.display='none'">
           </div>
-          <div class="project-card__body">
-            <span class="project-card__category">Sistema de contenido · IA</span>
-            <h3 class="project-card__title">Sistema de diseño para Windmar en Acción</h3>
-            <div class="project-card__meta">
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Objetivo</span>
+          <div class="cs-body">
+            <div>
+              <span class="cs-cat">Sistema de contenido · IA</span>
+              <h3 class="cs-title">Sistema de diseño para Windmar en Acción</h3>
+            </div>
+            <div class="cs-meta">
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Objetivo</span>
                 <p>Optimizar la creación de contenido orgánico para redes sociales con estandarización visual.</p>
               </div>
-              <div class="project-meta-block">
-                <span class="project-meta-block__label">Mi rol</span>
+              <div class="cs-meta__col">
+                <span class="cs-meta__label">Mi rol</span>
                 <p>Diseño estratégico del sistema y estructura de trabajo.</p>
               </div>
             </div>
-            <div class="project-card__tools">
+            <div class="cs-tools">
               <span class="tool-tag">Claude</span>
               <span class="tool-tag">IA Generativa</span>
               <span class="tool-tag">Canva</span>
             </div>
-            <ul class="project-card__results">
-              <li><span class="project-result__check">✓</span>Producción más rápida de contenido</li>
-              <li><span class="project-result__check">✓</span>Estandarización visual conseguida</li>
-              <li><span class="project-result__check">✓</span>Mayor enfoque en iniciativas estratégicas</li>
+            <ul class="cs-results">
+              <li class="cs-result"><span class="cs-result__dot">✓</span>Producción más rápida de contenido</li>
+              <li class="cs-result"><span class="cs-result__dot">✓</span>Estandarización visual conseguida</li>
+              <li class="cs-result"><span class="cs-result__dot">✓</span>Mayor enfoque en iniciativas estratégicas</li>
             </ul>
           </div>
         </article>
 
-      </div>
+      </div><!-- /cs-grid -->
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">✕</button>
+      <img class="lightbox__img" id="lightboxImg" src="" alt="">
+      <span class="lightbox__caption">Clic o Esc para cerrar</span>
     </div>
   </section>
 
